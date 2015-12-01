@@ -1,0 +1,916 @@
+[Nov 18 2015 21:41:27.000000 - ERROR] POST /api/adwords/cm/v201509/BudgetService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.27, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 474
+Authorization: Bearer ya29.MAILiJ6etoVFwn7zOyV0YA4fzkuuM8qnF_bABAzJ4FZLBeEqTj6yQLVz1Y2HWzTWUINuhw
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201509">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>570-998-9177</ns1:clientCustomerId>
+      <ns1:developerToken>JpsF0JlQfcGWbLo-TxvhHg</ns1:developerToken>
+      <ns1:userAgent>Easy AdWords Campaigns (AwApi-PHP/6.5.0, Common-PHP/6.5.0, PHP/5.5.27)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:mutate>
+      <ns1:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns1:operand>
+          <ns1:name>Interplanetary Cruise Budget #564cf08370160</ns1:name>
+          <ns1:period>DAILY</ns1:period>
+          <ns1:amount>
+            <ns1:microAmount>50000000</ns1:microAmount>
+          </ns1:amount>
+          <ns1:deliveryMethod>STANDARD</ns1:deliveryMethod>
+        </ns1:operand>
+      </ns1:operations>
+    </ns1:mutate>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Wed, 18 Nov 2015 10:41:53 GMT
+Expires: Wed, 18 Nov 2015 10:41:53 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 509
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201509">
+      <requestId>000524ce4a5ee4480a8158051a03fbc9</requestId>
+      <serviceName>BudgetService</serviceName>
+      <methodName>mutate</methodName>
+      <operations>1</operations>
+      <responseTime>58</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>[AuthorizationError.USER_PERMISSION_DENIED @ ; trigger:'&lt;null&gt;']</faultstring>
+      <detail>
+        <ApiExceptionFault xmlns="https://adwords.google.com/api/adwords/cm/v201509">
+          <message>[AuthorizationError.USER_PERMISSION_DENIED @ ; trigger:'&lt;null&gt;']</message>
+          <ApplicationException.Type>ApiException</ApplicationException.Type>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="AuthorizationError">
+            <fieldPath/>
+            <trigger>&lt;null&gt;</trigger>
+            <errorString>AuthorizationError.USER_PERMISSION_DENIED</errorString>
+            <ApiError.Type>AuthorizationError</ApiError.Type>
+            <reason>USER_PERMISSION_DENIED</reason>
+          </errors>
+        </ApiExceptionFault>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
+[Nov 18 2015 21:46:09.000000 - INFO] POST /api/adwords/cm/v201509/BudgetService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.27, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 474
+Authorization: Bearer ya29.MAIlGzMG-7KloKJyDVws83A6LI5KT4beV3-E4_rNlEswAlPr19bqAFucb8UmlhZ5kb9t
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201509">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>570-998-9177</ns1:clientCustomerId>
+      <ns1:developerToken>JpsF0JlQfcGWbLo-TxvhHg</ns1:developerToken>
+      <ns1:userAgent>Easy AdWords Campaigns (AwApi-PHP/6.5.0, Common-PHP/6.5.0, PHP/5.5.27)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:mutate>
+      <ns1:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns1:operand>
+          <ns1:name>Interplanetary Cruise Budget #564cf19e60eb7</ns1:name>
+          <ns1:period>DAILY</ns1:period>
+          <ns1:amount>
+            <ns1:microAmount>50000000</ns1:microAmount>
+          </ns1:amount>
+          <ns1:deliveryMethod>STANDARD</ns1:deliveryMethod>
+        </ns1:operand>
+      </ns1:operations>
+    </ns1:mutate>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Wed, 18 Nov 2015 10:46:34 GMT
+Expires: Wed, 18 Nov 2015 10:46:34 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 462
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201509">
+      <requestId>000524ce5b2330680a81638a5605ee1d</requestId>
+      <serviceName>BudgetService</serviceName>
+      <methodName>mutate</methodName>
+      <operations>1</operations>
+      <responseTime>480</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <mutateResponse xmlns="https://adwords.google.com/api/adwords/cm/v201509">
+      <rval>
+        <ListReturnValue.Type>BudgetReturnValue</ListReturnValue.Type>
+        <value>
+          <budgetId>293047286</budgetId>
+          <name>Interplanetary Cruise Budget #564cf19e60eb7</name>
+          <period>DAILY</period>
+          <amount>
+            <ComparableValue.Type>Money</ComparableValue.Type>
+            <microAmount>50000000</microAmount>
+          </amount>
+          <deliveryMethod>STANDARD</deliveryMethod>
+          <isExplicitlyShared>true</isExplicitlyShared>
+          <status>ENABLED</status>
+        </value>
+      </rval>
+    </mutateResponse>
+  </soap:Body>
+</soap:Envelope>
+
+[Nov 18 2015 21:46:10.000000 - ERROR] POST /api/adwords/cm/v201509/CampaignService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.27, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 885
+Authorization: Bearer ya29.MAIlGzMG-7KloKJyDVws83A6LI5KT4beV3-E4_rNlEswAlPr19bqAFucb8UmlhZ5kb9t
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201509" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>570-998-9177</ns1:clientCustomerId>
+      <ns1:developerToken>JpsF0JlQfcGWbLo-TxvhHg</ns1:developerToken>
+      <ns1:userAgent>Easy AdWords Campaigns (AwApi-PHP/6.5.0, Common-PHP/6.5.0, PHP/5.5.27)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:mutate>
+      <ns1:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns1:operand>
+          <ns1:name>Interplanetary Cruise #564cf1a1f3aa4</ns1:name>
+          <ns1:status>PAUSED</ns1:status>
+          <ns1:startDate>20151119</ns1:startDate>
+          <ns1:endDate>20151218</ns1:endDate>
+          <ns1:budget>
+            <ns1:budgetId>293047286</ns1:budgetId>
+          </ns1:budget>
+          <ns1:adServingOptimizationStatus>ROTATE</ns1:adServingOptimizationStatus>
+          <ns1:frequencyCap>
+            <ns1:impressions>5</ns1:impressions>
+            <ns1:timeUnit>DAY</ns1:timeUnit>
+            <ns1:level>ADGROUP</ns1:level>
+          </ns1:frequencyCap>
+          <ns1:settings xsi:type="ns1:GeoTargetTypeSetting">
+            <ns1:positiveGeoTargetType>DONT_CARE</ns1:positiveGeoTargetType>
+            <ns1:negativeGeoTargetType>DONT_CARE</ns1:negativeGeoTargetType>
+          </ns1:settings>
+          <ns1:advertisingChannelType>SEARCH</ns1:advertisingChannelType>
+          <ns1:networkSetting>
+            <ns1:targetGoogleSearch>true</ns1:targetGoogleSearch>
+            <ns1:targetSearchNetwork>true</ns1:targetSearchNetwork>
+            <ns1:targetContentNetwork>true</ns1:targetContentNetwork>
+          </ns1:networkSetting>
+          <ns1:biddingStrategyConfiguration>
+            <ns1:biddingStrategyType>MANUAL_CPC</ns1:biddingStrategyType>
+            <ns1:biddingScheme xsi:type="ns1:ManualCpcBiddingScheme">
+              <ns1:enhancedCpcEnabled>false</ns1:enhancedCpcEnabled>
+            </ns1:biddingScheme>
+          </ns1:biddingStrategyConfiguration>
+        </ns1:operand>
+      </ns1:operations>
+      <ns1:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns1:operand>
+          <ns1:name>Interplanetary Cruise #564cf1a1f3e61</ns1:name>
+          <ns1:status>PAUSED</ns1:status>
+          <ns1:startDate>20151119</ns1:startDate>
+          <ns1:endDate>20151218</ns1:endDate>
+          <ns1:budget>
+            <ns1:budgetId>293047286</ns1:budgetId>
+          </ns1:budget>
+          <ns1:adServingOptimizationStatus>ROTATE</ns1:adServingOptimizationStatus>
+          <ns1:frequencyCap>
+            <ns1:impressions>5</ns1:impressions>
+            <ns1:timeUnit>DAY</ns1:timeUnit>
+            <ns1:level>ADGROUP</ns1:level>
+          </ns1:frequencyCap>
+          <ns1:settings xsi:type="ns1:GeoTargetTypeSetting">
+            <ns1:positiveGeoTargetType>DONT_CARE</ns1:positiveGeoTargetType>
+            <ns1:negativeGeoTargetType>DONT_CARE</ns1:negativeGeoTargetType>
+          </ns1:settings>
+          <ns1:advertisingChannelType>SEARCH</ns1:advertisingChannelType>
+          <ns1:networkSetting>
+            <ns1:targetGoogleSearch>true</ns1:targetGoogleSearch>
+            <ns1:targetSearchNetwork>true</ns1:targetSearchNetwork>
+            <ns1:targetContentNetwork>true</ns1:targetContentNetwork>
+          </ns1:networkSetting>
+          <ns1:biddingStrategyConfiguration>
+            <ns1:biddingStrategyType>MANUAL_CPC</ns1:biddingStrategyType>
+            <ns1:biddingScheme xsi:type="ns1:ManualCpcBiddingScheme">
+              <ns1:enhancedCpcEnabled>false</ns1:enhancedCpcEnabled>
+            </ns1:biddingScheme>
+          </ns1:biddingStrategyConfiguration>
+        </ns1:operand>
+      </ns1:operations>
+    </ns1:mutate>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Wed, 18 Nov 2015 10:46:36 GMT
+Expires: Wed, 18 Nov 2015 10:46:36 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 562
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201509">
+      <requestId>000524ce5b41e7b10a818a44d10cb26e</requestId>
+      <serviceName>CampaignService</serviceName>
+      <methodName>mutate</methodName>
+      <operations>2</operations>
+      <responseTime>43</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>[OperationAccessDenied.ADD_OPERATION_NOT_PERMITTED @ class campaignmgmt.campaign.MutateAction (ADD) requires CREATE_CAMPAIGN, OperationAccessDenied.ADD_OPERATION_NOT_PERMITTED @ class campaignmgmt.campaign.MutateAction (ADD) requires CREATE_CAMPAIGN]</faultstring>
+      <detail>
+        <ApiExceptionFault xmlns="https://adwords.google.com/api/adwords/cm/v201509">
+          <message>[OperationAccessDenied.ADD_OPERATION_NOT_PERMITTED @ class campaignmgmt.campaign.MutateAction (ADD) requires CREATE_CAMPAIGN, OperationAccessDenied.ADD_OPERATION_NOT_PERMITTED @ class campaignmgmt.campaign.MutateAction (ADD) requires CREATE_CAMPAIGN]</message>
+          <ApplicationException.Type>ApiException</ApplicationException.Type>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OperationAccessDenied">
+            <fieldPath>operations[0]</fieldPath>
+            <trigger/>
+            <errorString>OperationAccessDenied.ADD_OPERATION_NOT_PERMITTED</errorString>
+            <ApiError.Type>OperationAccessDenied</ApiError.Type>
+            <reason>ADD_OPERATION_NOT_PERMITTED</reason>
+          </errors>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OperationAccessDenied">
+            <fieldPath>operations[1]</fieldPath>
+            <trigger/>
+            <errorString>OperationAccessDenied.ADD_OPERATION_NOT_PERMITTED</errorString>
+            <ApiError.Type>OperationAccessDenied</ApiError.Type>
+            <reason>ADD_OPERATION_NOT_PERMITTED</reason>
+          </errors>
+        </ApiExceptionFault>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
+[Nov 18 2015 23:52:33.000000 - INFO] POST /api/adwords/cm/v201509/BudgetService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.27, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 474
+Authorization: Bearer ya29.MAIGLVHhTx0iDnMP3KZWpXQhtRLeFvlaTDPacug7rMRupBd6hawksd-ADhZukNPoANjj
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201509">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>570-998-9177</ns1:clientCustomerId>
+      <ns1:developerToken>JpsF0JlQfcGWbLo-TxvhHg</ns1:developerToken>
+      <ns1:userAgent>Easy AdWords Campaigns (AwApi-PHP/6.5.0, Common-PHP/6.5.0, PHP/5.5.27)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:mutate>
+      <ns1:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns1:operand>
+          <ns1:name>Interplanetary Cruise Budget #564d0f3d2714e</ns1:name>
+          <ns1:period>DAILY</ns1:period>
+          <ns1:amount>
+            <ns1:microAmount>50000000</ns1:microAmount>
+          </ns1:amount>
+          <ns1:deliveryMethod>STANDARD</ns1:deliveryMethod>
+        </ns1:operand>
+      </ns1:operations>
+    </ns1:mutate>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Wed, 18 Nov 2015 12:52:59 GMT
+Expires: Wed, 18 Nov 2015 12:52:59 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 463
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201509">
+      <requestId>000524d01f3402890a816c163103aa56</requestId>
+      <serviceName>BudgetService</serviceName>
+      <methodName>mutate</methodName>
+      <operations>1</operations>
+      <responseTime>253</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <mutateResponse xmlns="https://adwords.google.com/api/adwords/cm/v201509">
+      <rval>
+        <ListReturnValue.Type>BudgetReturnValue</ListReturnValue.Type>
+        <value>
+          <budgetId>293107286</budgetId>
+          <name>Interplanetary Cruise Budget #564d0f3d2714e</name>
+          <period>DAILY</period>
+          <amount>
+            <ComparableValue.Type>Money</ComparableValue.Type>
+            <microAmount>50000000</microAmount>
+          </amount>
+          <deliveryMethod>STANDARD</deliveryMethod>
+          <isExplicitlyShared>true</isExplicitlyShared>
+          <status>ENABLED</status>
+        </value>
+      </rval>
+    </mutateResponse>
+  </soap:Body>
+</soap:Envelope>
+
+[Nov 18 2015 23:52:35.000000 - ERROR] POST /api/adwords/cm/v201509/CampaignService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.27, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 886
+Authorization: Bearer ya29.MAIGLVHhTx0iDnMP3KZWpXQhtRLeFvlaTDPacug7rMRupBd6hawksd-ADhZukNPoANjj
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201509" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>570-998-9177</ns1:clientCustomerId>
+      <ns1:developerToken>JpsF0JlQfcGWbLo-TxvhHg</ns1:developerToken>
+      <ns1:userAgent>Easy AdWords Campaigns (AwApi-PHP/6.5.0, Common-PHP/6.5.0, PHP/5.5.27)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:mutate>
+      <ns1:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns1:operand>
+          <ns1:name>Interplanetary Cruise #564d0f42a0dab</ns1:name>
+          <ns1:status>PAUSED</ns1:status>
+          <ns1:startDate>20151119</ns1:startDate>
+          <ns1:endDate>20151218</ns1:endDate>
+          <ns1:budget>
+            <ns1:budgetId>293107286</ns1:budgetId>
+          </ns1:budget>
+          <ns1:adServingOptimizationStatus>ROTATE</ns1:adServingOptimizationStatus>
+          <ns1:frequencyCap>
+            <ns1:impressions>5</ns1:impressions>
+            <ns1:timeUnit>DAY</ns1:timeUnit>
+            <ns1:level>ADGROUP</ns1:level>
+          </ns1:frequencyCap>
+          <ns1:settings xsi:type="ns1:GeoTargetTypeSetting">
+            <ns1:positiveGeoTargetType>DONT_CARE</ns1:positiveGeoTargetType>
+            <ns1:negativeGeoTargetType>DONT_CARE</ns1:negativeGeoTargetType>
+          </ns1:settings>
+          <ns1:advertisingChannelType>SEARCH</ns1:advertisingChannelType>
+          <ns1:networkSetting>
+            <ns1:targetGoogleSearch>true</ns1:targetGoogleSearch>
+            <ns1:targetSearchNetwork>true</ns1:targetSearchNetwork>
+            <ns1:targetContentNetwork>true</ns1:targetContentNetwork>
+          </ns1:networkSetting>
+          <ns1:biddingStrategyConfiguration>
+            <ns1:biddingStrategyType>MANUAL_CPC</ns1:biddingStrategyType>
+            <ns1:biddingScheme xsi:type="ns1:ManualCpcBiddingScheme">
+              <ns1:enhancedCpcEnabled>false</ns1:enhancedCpcEnabled>
+            </ns1:biddingScheme>
+          </ns1:biddingStrategyConfiguration>
+        </ns1:operand>
+      </ns1:operations>
+      <ns1:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns1:operand>
+          <ns1:name>Interplanetary Cruise #564d0f42a1083</ns1:name>
+          <ns1:status>PAUSED</ns1:status>
+          <ns1:startDate>20151119</ns1:startDate>
+          <ns1:endDate>20151218</ns1:endDate>
+          <ns1:budget>
+            <ns1:budgetId>293107286</ns1:budgetId>
+          </ns1:budget>
+          <ns1:adServingOptimizationStatus>ROTATE</ns1:adServingOptimizationStatus>
+          <ns1:frequencyCap>
+            <ns1:impressions>5</ns1:impressions>
+            <ns1:timeUnit>DAY</ns1:timeUnit>
+            <ns1:level>ADGROUP</ns1:level>
+          </ns1:frequencyCap>
+          <ns1:settings xsi:type="ns1:GeoTargetTypeSetting">
+            <ns1:positiveGeoTargetType>DONT_CARE</ns1:positiveGeoTargetType>
+            <ns1:negativeGeoTargetType>DONT_CARE</ns1:negativeGeoTargetType>
+          </ns1:settings>
+          <ns1:advertisingChannelType>SEARCH</ns1:advertisingChannelType>
+          <ns1:networkSetting>
+            <ns1:targetGoogleSearch>true</ns1:targetGoogleSearch>
+            <ns1:targetSearchNetwork>true</ns1:targetSearchNetwork>
+            <ns1:targetContentNetwork>true</ns1:targetContentNetwork>
+          </ns1:networkSetting>
+          <ns1:biddingStrategyConfiguration>
+            <ns1:biddingStrategyType>MANUAL_CPC</ns1:biddingStrategyType>
+            <ns1:biddingScheme xsi:type="ns1:ManualCpcBiddingScheme">
+              <ns1:enhancedCpcEnabled>false</ns1:enhancedCpcEnabled>
+            </ns1:biddingScheme>
+          </ns1:biddingStrategyConfiguration>
+        </ns1:operand>
+      </ns1:operations>
+    </ns1:mutate>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Wed, 18 Nov 2015 12:53:01 GMT
+Expires: Wed, 18 Nov 2015 12:53:01 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 563
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201509">
+      <requestId>000524d01f56eff00a818982ab0741af</requestId>
+      <serviceName>CampaignService</serviceName>
+      <methodName>mutate</methodName>
+      <operations>2</operations>
+      <responseTime>157</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>[OperationAccessDenied.ADD_OPERATION_NOT_PERMITTED @ class campaignmgmt.campaign.MutateAction (ADD) requires CREATE_CAMPAIGN, OperationAccessDenied.ADD_OPERATION_NOT_PERMITTED @ class campaignmgmt.campaign.MutateAction (ADD) requires CREATE_CAMPAIGN]</faultstring>
+      <detail>
+        <ApiExceptionFault xmlns="https://adwords.google.com/api/adwords/cm/v201509">
+          <message>[OperationAccessDenied.ADD_OPERATION_NOT_PERMITTED @ class campaignmgmt.campaign.MutateAction (ADD) requires CREATE_CAMPAIGN, OperationAccessDenied.ADD_OPERATION_NOT_PERMITTED @ class campaignmgmt.campaign.MutateAction (ADD) requires CREATE_CAMPAIGN]</message>
+          <ApplicationException.Type>ApiException</ApplicationException.Type>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OperationAccessDenied">
+            <fieldPath>operations[0]</fieldPath>
+            <trigger/>
+            <errorString>OperationAccessDenied.ADD_OPERATION_NOT_PERMITTED</errorString>
+            <ApiError.Type>OperationAccessDenied</ApiError.Type>
+            <reason>ADD_OPERATION_NOT_PERMITTED</reason>
+          </errors>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="OperationAccessDenied">
+            <fieldPath>operations[1]</fieldPath>
+            <trigger/>
+            <errorString>OperationAccessDenied.ADD_OPERATION_NOT_PERMITTED</errorString>
+            <ApiError.Type>OperationAccessDenied</ApiError.Type>
+            <reason>ADD_OPERATION_NOT_PERMITTED</reason>
+          </errors>
+        </ApiExceptionFault>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
+[Nov 18 2015 23:54:48.000000 - INFO] POST /api/adwords/cm/v201509/BudgetService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.27, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 474
+Authorization: Bearer ya29.MALELAQ7lCOAG_ajxKZ3665788UC0hoN_OrhzIlpVmP0EBtCaZUGyro3vS2roS6QuxI7
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201509">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>953-554-2530</ns1:clientCustomerId>
+      <ns1:developerToken>JpsF0JlQfcGWbLo-TxvhHg</ns1:developerToken>
+      <ns1:userAgent>Easy AdWords Campaigns (AwApi-PHP/6.5.0, Common-PHP/6.5.0, PHP/5.5.27)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:mutate>
+      <ns1:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns1:operand>
+          <ns1:name>Interplanetary Cruise Budget #564d0fc62c289</ns1:name>
+          <ns1:period>DAILY</ns1:period>
+          <ns1:amount>
+            <ns1:microAmount>50000000</ns1:microAmount>
+          </ns1:amount>
+          <ns1:deliveryMethod>STANDARD</ns1:deliveryMethod>
+        </ns1:operand>
+      </ns1:operations>
+    </ns1:mutate>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Wed, 18 Nov 2015 12:55:14 GMT
+Expires: Wed, 18 Nov 2015 12:55:14 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 461
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201509">
+      <requestId>000524d0274370d00a0dd4108201887e</requestId>
+      <serviceName>BudgetService</serviceName>
+      <methodName>mutate</methodName>
+      <operations>1</operations>
+      <responseTime>219</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <mutateResponse xmlns="https://adwords.google.com/api/adwords/cm/v201509">
+      <rval>
+        <ListReturnValue.Type>BudgetReturnValue</ListReturnValue.Type>
+        <value>
+          <budgetId>536942540</budgetId>
+          <name>Interplanetary Cruise Budget #564d0fc62c289</name>
+          <period>DAILY</period>
+          <amount>
+            <ComparableValue.Type>Money</ComparableValue.Type>
+            <microAmount>50000000</microAmount>
+          </amount>
+          <deliveryMethod>STANDARD</deliveryMethod>
+          <isExplicitlyShared>true</isExplicitlyShared>
+          <status>ENABLED</status>
+        </value>
+      </rval>
+    </mutateResponse>
+  </soap:Body>
+</soap:Envelope>
+
+[Nov 18 2015 23:54:50.000000 - INFO] POST /api/adwords/cm/v201509/CampaignService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.27, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 885
+Authorization: Bearer ya29.MALELAQ7lCOAG_ajxKZ3665788UC0hoN_OrhzIlpVmP0EBtCaZUGyro3vS2roS6QuxI7
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201509" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:clientCustomerId>953-554-2530</ns1:clientCustomerId>
+      <ns1:developerToken>JpsF0JlQfcGWbLo-TxvhHg</ns1:developerToken>
+      <ns1:userAgent>Easy AdWords Campaigns (AwApi-PHP/6.5.0, Common-PHP/6.5.0, PHP/5.5.27)</ns1:userAgent>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:mutate>
+      <ns1:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns1:operand>
+          <ns1:name>Interplanetary Cruise #564d0fc973f88</ns1:name>
+          <ns1:status>PAUSED</ns1:status>
+          <ns1:startDate>20151119</ns1:startDate>
+          <ns1:endDate>20151218</ns1:endDate>
+          <ns1:budget>
+            <ns1:budgetId>536942540</ns1:budgetId>
+          </ns1:budget>
+          <ns1:adServingOptimizationStatus>ROTATE</ns1:adServingOptimizationStatus>
+          <ns1:frequencyCap>
+            <ns1:impressions>5</ns1:impressions>
+            <ns1:timeUnit>DAY</ns1:timeUnit>
+            <ns1:level>ADGROUP</ns1:level>
+          </ns1:frequencyCap>
+          <ns1:settings xsi:type="ns1:GeoTargetTypeSetting">
+            <ns1:positiveGeoTargetType>DONT_CARE</ns1:positiveGeoTargetType>
+            <ns1:negativeGeoTargetType>DONT_CARE</ns1:negativeGeoTargetType>
+          </ns1:settings>
+          <ns1:advertisingChannelType>SEARCH</ns1:advertisingChannelType>
+          <ns1:networkSetting>
+            <ns1:targetGoogleSearch>true</ns1:targetGoogleSearch>
+            <ns1:targetSearchNetwork>true</ns1:targetSearchNetwork>
+            <ns1:targetContentNetwork>true</ns1:targetContentNetwork>
+          </ns1:networkSetting>
+          <ns1:biddingStrategyConfiguration>
+            <ns1:biddingStrategyType>MANUAL_CPC</ns1:biddingStrategyType>
+            <ns1:biddingScheme xsi:type="ns1:ManualCpcBiddingScheme">
+              <ns1:enhancedCpcEnabled>false</ns1:enhancedCpcEnabled>
+            </ns1:biddingScheme>
+          </ns1:biddingStrategyConfiguration>
+        </ns1:operand>
+      </ns1:operations>
+      <ns1:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns1:operand>
+          <ns1:name>Interplanetary Cruise #564d0fc9741e3</ns1:name>
+          <ns1:status>PAUSED</ns1:status>
+          <ns1:startDate>20151119</ns1:startDate>
+          <ns1:endDate>20151218</ns1:endDate>
+          <ns1:budget>
+            <ns1:budgetId>536942540</ns1:budgetId>
+          </ns1:budget>
+          <ns1:adServingOptimizationStatus>ROTATE</ns1:adServingOptimizationStatus>
+          <ns1:frequencyCap>
+            <ns1:impressions>5</ns1:impressions>
+            <ns1:timeUnit>DAY</ns1:timeUnit>
+            <ns1:level>ADGROUP</ns1:level>
+          </ns1:frequencyCap>
+          <ns1:settings xsi:type="ns1:GeoTargetTypeSetting">
+            <ns1:positiveGeoTargetType>DONT_CARE</ns1:positiveGeoTargetType>
+            <ns1:negativeGeoTargetType>DONT_CARE</ns1:negativeGeoTargetType>
+          </ns1:settings>
+          <ns1:advertisingChannelType>SEARCH</ns1:advertisingChannelType>
+          <ns1:networkSetting>
+            <ns1:targetGoogleSearch>true</ns1:targetGoogleSearch>
+            <ns1:targetSearchNetwork>true</ns1:targetSearchNetwork>
+            <ns1:targetContentNetwork>true</ns1:targetContentNetwork>
+          </ns1:networkSetting>
+          <ns1:biddingStrategyConfiguration>
+            <ns1:biddingStrategyType>MANUAL_CPC</ns1:biddingStrategyType>
+            <ns1:biddingScheme xsi:type="ns1:ManualCpcBiddingScheme">
+              <ns1:enhancedCpcEnabled>false</ns1:enhancedCpcEnabled>
+            </ns1:biddingScheme>
+          </ns1:biddingStrategyConfiguration>
+        </ns1:operand>
+      </ns1:operations>
+    </ns1:mutate>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Wed, 18 Nov 2015 12:55:16 GMT
+Expires: Wed, 18 Nov 2015 12:55:16 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 1004
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://adwords.google.com/api/adwords/cm/v201509">
+      <requestId>000524d0275ff5990a0dc9c5e60482cb</requestId>
+      <serviceName>CampaignService</serviceName>
+      <methodName>mutate</methodName>
+      <operations>2</operations>
+      <responseTime>115</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <mutateResponse xmlns="https://adwords.google.com/api/adwords/cm/v201509">
+      <rval>
+        <ListReturnValue.Type>CampaignReturnValue</ListReturnValue.Type>
+        <value>
+          <id>367140980</id>
+          <name>Interplanetary Cruise #564d0fc973f88</name>
+          <status>PAUSED</status>
+          <servingStatus>PENDING</servingStatus>
+          <startDate>20151119</startDate>
+          <endDate>20151218</endDate>
+          <budget>
+            <budgetId>536942540</budgetId>
+            <name>Interplanetary Cruise Budget #564d0fc62c289</name>
+            <period>DAILY</period>
+            <amount>
+              <ComparableValue.Type>Money</ComparableValue.Type>
+              <microAmount>50000000</microAmount>
+            </amount>
+            <deliveryMethod>STANDARD</deliveryMethod>
+            <isExplicitlyShared>true</isExplicitlyShared>
+            <status>ENABLED</status>
+          </budget>
+          <conversionOptimizerEligibility>
+            <eligible>false</eligible>
+            <rejectionReasons>CONVERSION_TRACKING_NOT_ENABLED</rejectionReasons>
+          </conversionOptimizerEligibility>
+          <adServingOptimizationStatus>ROTATE</adServingOptimizationStatus>
+          <frequencyCap>
+            <impressions>5</impressions>
+            <timeUnit>DAY</timeUnit>
+            <level>ADGROUP</level>
+          </frequencyCap>
+          <settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="GeoTargetTypeSetting">
+            <Setting.Type>GeoTargetTypeSetting</Setting.Type>
+            <positiveGeoTargetType>DONT_CARE</positiveGeoTargetType>
+            <negativeGeoTargetType>DONT_CARE</negativeGeoTargetType>
+          </settings>
+          <advertisingChannelType>SEARCH</advertisingChannelType>
+          <networkSetting>
+            <targetGoogleSearch>true</targetGoogleSearch>
+            <targetSearchNetwork>true</targetSearchNetwork>
+            <targetContentNetwork>true</targetContentNetwork>
+            <targetPartnerSearchNetwork>false</targetPartnerSearchNetwork>
+          </networkSetting>
+          <biddingStrategyConfiguration>
+            <biddingStrategyType>MANUAL_CPC</biddingStrategyType>
+            <biddingScheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ManualCpcBiddingScheme">
+              <BiddingScheme.Type>ManualCpcBiddingScheme</BiddingScheme.Type>
+              <enhancedCpcEnabled>false</enhancedCpcEnabled>
+            </biddingScheme>
+          </biddingStrategyConfiguration>
+        </value>
+        <value>
+          <id>367141100</id>
+          <name>Interplanetary Cruise #564d0fc9741e3</name>
+          <status>PAUSED</status>
+          <servingStatus>PENDING</servingStatus>
+          <startDate>20151119</startDate>
+          <endDate>20151218</endDate>
+          <budget>
+            <budgetId>536942540</budgetId>
+            <name>Interplanetary Cruise Budget #564d0fc62c289</name>
+            <period>DAILY</period>
+            <amount>
+              <ComparableValue.Type>Money</ComparableValue.Type>
+              <microAmount>50000000</microAmount>
+            </amount>
+            <deliveryMethod>STANDARD</deliveryMethod>
+            <isExplicitlyShared>true</isExplicitlyShared>
+            <status>ENABLED</status>
+          </budget>
+          <conversionOptimizerEligibility>
+            <eligible>false</eligible>
+            <rejectionReasons>CONVERSION_TRACKING_NOT_ENABLED</rejectionReasons>
+          </conversionOptimizerEligibility>
+          <adServingOptimizationStatus>ROTATE</adServingOptimizationStatus>
+          <frequencyCap>
+            <impressions>5</impressions>
+            <timeUnit>DAY</timeUnit>
+            <level>ADGROUP</level>
+          </frequencyCap>
+          <settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="GeoTargetTypeSetting">
+            <Setting.Type>GeoTargetTypeSetting</Setting.Type>
+            <positiveGeoTargetType>DONT_CARE</positiveGeoTargetType>
+            <negativeGeoTargetType>DONT_CARE</negativeGeoTargetType>
+          </settings>
+          <advertisingChannelType>SEARCH</advertisingChannelType>
+          <networkSetting>
+            <targetGoogleSearch>true</targetGoogleSearch>
+            <targetSearchNetwork>true</targetSearchNetwork>
+            <targetContentNetwork>true</targetContentNetwork>
+            <targetPartnerSearchNetwork>false</targetPartnerSearchNetwork>
+          </networkSetting>
+          <biddingStrategyConfiguration>
+            <biddingStrategyType>MANUAL_CPC</biddingStrategyType>
+            <biddingScheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ManualCpcBiddingScheme">
+              <BiddingScheme.Type>ManualCpcBiddingScheme</BiddingScheme.Type>
+              <enhancedCpcEnabled>false</enhancedCpcEnabled>
+            </biddingScheme>
+          </biddingStrategyConfiguration>
+        </value>
+      </rval>
+    </mutateResponse>
+  </soap:Body>
+</soap:Envelope>
+
+[Nov 19 2015 01:34:12.000000 - ERROR] POST /api/adwords/mcm/v201509/ManagedCustomerService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.27, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 456
+Authorization: Bearer ya29.MALKNrRVBT8HWGiMzoJFt6dTwIFwgHOCf8o-esx7Mc2xGBCJxvAvz_1WJgU-GK4XFWc8dg
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201509" xmlns:ns2="https://adwords.google.com/api/adwords/mcm/v201509">
+  <SOAP-ENV:Header>
+    <ns2:RequestHeader>
+      <ns1:clientCustomerId>953-554-2530</ns1:clientCustomerId>
+      <ns1:developerToken>JpsF0JlQfcGWbLo-TxvhHg</ns1:developerToken>
+      <ns1:userAgent>Easy AdWords Campaigns (AwApi-PHP/6.5.0, Common-PHP/6.5.0, PHP/5.5.27)</ns1:userAgent>
+    </ns2:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns2:mutate>
+      <ns2:operations>
+        <ns1:operator>ADD</ns1:operator>
+        <ns2:operand>
+          <ns2:name>Account #564d270fcb7a7</ns2:name>
+          <ns2:currencyCode>EUR</ns2:currencyCode>
+          <ns2:dateTimeZone>Europe/London</ns2:dateTimeZone>
+        </ns2:operand>
+      </ns2:operations>
+    </ns2:mutate>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Wed, 18 Nov 2015 14:34:38 GMT
+Expires: Wed, 18 Nov 2015 14:34:38 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 513
+Server: GSE
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ns2:ResponseHeader xmlns:ns2="https://adwords.google.com/api/adwords/mcm/v201509" xmlns="https://adwords.google.com/api/adwords/cm/v201509">
+      <requestId>000524d18ac505f00ac2f6a3700ccf85</requestId>
+      <serviceName>ManagedCustomerService</serviceName>
+      <methodName>mutate</methodName>
+      <operations>1</operations>
+      <responseTime>270</responseTime>
+    </ns2:ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>[ManagedCustomerServiceError.NOT_AUTHORIZED @ operations[0]]</faultstring>
+      <detail>
+        <ns2:ApiExceptionFault xmlns="https://adwords.google.com/api/adwords/cm/v201509" xmlns:ns2="https://adwords.google.com/api/adwords/mcm/v201509">
+          <message>[ManagedCustomerServiceError.NOT_AUTHORIZED @ operations[0]]</message>
+          <ApplicationException.Type>ApiException</ApplicationException.Type>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:ManagedCustomerServiceError">
+            <fieldPath>operations[0]</fieldPath>
+            <trigger/>
+            <errorString>ManagedCustomerServiceError.NOT_AUTHORIZED</errorString>
+            <ApiError.Type>ManagedCustomerServiceError</ApiError.Type>
+            <ns2:reason>NOT_AUTHORIZED</ns2:reason>
+          </errors>
+        </ns2:ApiExceptionFault>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
